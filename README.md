@@ -307,7 +307,7 @@ Now Start The Tests and You will see all tests working on Android and this Devic
 If You see Missing Libraries or Dependencies after add All Jars and Selenium Jar
 Add This Dependencies inside pom.xml inside <dependencies>
 
-'''
+```xml
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -410,7 +410,7 @@ Add This Dependencies inside pom.xml inside <dependencies>
 ''' 
 
 2. Make Sure Your Build Block looks like this
-'''
+```xml
 <build>
 
 		<plugins>
