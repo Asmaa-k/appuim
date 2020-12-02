@@ -407,7 +407,6 @@ Add This Dependencies inside pom.xml inside <dependencies>
     <version>7.3.0</version>
     <scope>test</scope>
 </dependency>
-		
 ''' 
 
 2. Make Sure Your Build Block looks like this
