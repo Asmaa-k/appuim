@@ -407,7 +407,7 @@ Add This Dependencies inside pom.xml inside <dependencies>
     <version>7.3.0</version>
     <scope>test</scope>
 </dependency>
-''' 
+```
 
 2. Make Sure Your Build Block looks like this
 ```xml
@@ -442,7 +442,7 @@ Add This Dependencies inside pom.xml inside <dependencies>
 			</plugin>
 		</plugins>
 	</build>
-'''
+```
 
 
 If you see JAVA_HOME / ANDROID_ROOT or Connection Refuse with This 2 Values the Problem in Server Side your JAVA_HOME / ANDROID_HOME is Invalid Inside Appium Configuration when You Clicked on Edit Configuration
