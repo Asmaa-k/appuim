@@ -447,4 +447,10 @@ Add This Dependencies inside pom.xml inside <dependencies>
 
 If you see JAVA_HOME / ANDROID_ROOT or Connection Refuse with This 2 Values the Problem in Server Side your JAVA_HOME / ANDROID_HOME is Invalid Inside Appium Configuration when You Clicked on Edit Configuration
 Check this Values and should match the values inside Terminal when you use printenv command
+<br>
+### note related to adding libraries (testng, junit)
+1. right click on the project, 
+2. from build-path or proprites select "build-path" 
+3.then click on libraries 
+4.then add library
 
