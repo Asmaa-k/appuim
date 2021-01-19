@@ -459,7 +459,10 @@ Check this Values and should match the values inside Terminal when you use print
 2. after downloading the emulater, open it from Avd manager and run it
 3. go to your terminal then write "adb devices"
 4. copy the name of this emulater for example "emulator-5554 from terminal to added later on appium parallel XML
-5. pleas notice that these (port, host) are defualt values to run emulater(port: 4723, "host": "0.0.0.0") these are the defulat so stuck with them or if there's defualt (post, host) on your appium server, stuck to them
+5. pleas notice that these (port, host) are defualt values to run emulater(port: 4723, "host": "0.0.0.0") these are the defulat so stuck with them or if there's defualt (post, host) on your appium server, stick to them
+
+<img width="645" alt="Screen Shot 2021-01-19 at 5 35 24 PM" src="https://user-images.githubusercontent.com/47636256/105058548-02d82c00-5a7f-11eb-9ea2-2b94c734b654.png">
+
 6. copy and past this snippet to your paralel xml on eclips or whatever ide you are using
 ```xml
 		<test name="EmulaterConfig">
@@ -469,7 +472,6 @@ Check this Values and should match the values inside Terminal when you use print
 		<classes>
        <class name="com.opensooq.automation.scenario.Notifications" />	
 		</classes>
-	</test>
 ```
 7. now try to run
 
