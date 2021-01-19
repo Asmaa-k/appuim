@@ -458,45 +458,19 @@ Check this Values and should match the values inside Terminal when you use print
 1. download one from Anderoid Studio "Avd manager -> create vertual device" - the one higher than kitkat is preferred- 
 2. after downloading the emulater, open it from Avd manager and run it
 3. go to your terminal then write "adb devices"
-4. copy the name of this emulater for example "emulator-5554 from terminal and added to your json file like this "deviceName": "emulator-5554",
-5. pleas notice that these stuff are fixed value or defualt values to run emulater(port: 4723, "host": "0.0.0.0") so copy the follwoing json without change a thing
+4. copy the name of this emulater for example "emulator-5554 from terminal to added later on appium parallel XML
+5. pleas notice that these (port, host) are defualt values to run emulater(port: 4723, "host": "0.0.0.0") these are the defulat so stuck with them or if there's defualt (post, host) on your appium server, stuck to them
+6. copy and past this snippet to your paralel xml on eclips or whatever ide you are using
+```xml
+		<test name="EmulaterConfig">
+		<parameter name="runAs" value="grid"></parameter>
+		<parameter name="runOn" value="emulator-5554"></parameter>
+		<parameter name="host" value="http://0.0.0.0:4723/wd/hub"></parameter>
+		<classes>
+       <class name="com.opensooq.automation.scenario.Notifications" />	
+		</classes>
+	</test>
+```
+7. now try to run
 
-file name : EmulaterConfig.json
-```xml
-{
-"capabilities":
-     [
-       {
-         "deviceName": "emulator-5554",
-         "version":"4.4.2",
-         "maxInstances": 3,
-         "platformName":"ANDROID",
-       }
-     ],
-"configuration":
-{
-   "timeout":300000,
-   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
-   "url":"http://127.0.0.1:4726/wd/hub",
-   "host": "0.0.0.0",
-   "port": 4723,
-   "maxSession": 6,
-   "hubPort": 4444,
-   "hubHost": "0.0.0.0",
-   "register": true
-}
-}
-```
-file name : EmulaterConfig.sh
-```xml
-appium -a 0.0.0.0 -p 4723 -bp 8081 --nodeconfig EmulaterConfig.json --session-override &
-```
-file name : EmulaterConfig.bat
-```xml
-appium -a 0.0.0.0 -p 4723 -bp 8081 --nodeconfig EmulaterConfig.json --session-override &
-```
-file name : EmulaterConfig.bat.bat
-```xml
-appium -a 0.0.0.0 -p 4723 -bp 8081 --nodeconfig EmulaterConfig.json --session-override &
-```
 
