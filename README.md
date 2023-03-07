@@ -186,11 +186,11 @@ Now You Need to Find Your Android Root Path with Platform Tools Path
 
 1. click on any file inside your Finder
 2. Right Click and click on Get Info
-3. You can Find Your Root Path of your Machine inside Where Section Like this Users/opensooquser/Library/
+3. You can Find Your Root Path of your Machine inside Where Section Like this Users/asmaa/Library/
 4. Now Open Your Terminal App
 5. Open Android Studio
-6. Click on SDK Manager Icon inside Toolbar Now You will see the Path Like this /Users/opensooquser/Library/Android/sdk in the top of Dialog
-7. Copy This Path /Users/opensooquser/Library/Android/sdk to Note
+6. Click on SDK Manager Icon inside Toolbar Now You will see the Path Like this /Users/asmaa/Library/Android/sdk in the top of Dialog
+7. Copy This Path /Users/asmaa/Library/Android/sdk to Note
 8. Write This Line Inside Your Note export ANDROID_SDK_ROOT=Your Path Here without Any Space
 9. Write This Line Inside Your Note export ANDROID_HOME=Your Path Here without Any Space/platform-tools
 10. Write This Line Inside your Note export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
@@ -198,8 +198,8 @@ Now You Need to Find Your Android Root Path with Platform Tools Path
 Now Your Note Will be Like This
 
 '''
-export ANDROID_HOME=/Users/opensooquser/Library/Android/sdk/platform-tools
-export ANDROID_SDK_ROOT=/Users/opensooquser/Library/Android/sdk
+export ANDROID_HOME=/Users/asmaa/Library/Android/sdk/platform-tools
+export ANDROID_SDK_ROOT=/Users/asmaa/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 '''
 
@@ -212,8 +212,8 @@ Write java -version inside Terminal and you will find the Version
 Now Your Note Should be like this
 
 '''
-export ANDROID_HOME=/Users/opensooquser/Library/Android/sdk/platform-tools
-export ANDROID_SDK_ROOT=/Users/opensooquser/Library/Android/sdk
+export ANDROID_HOME=/Users/asmaa/Library/Android/sdk/platform-tools
+export ANDROID_SDK_ROOT=/Users/asmaa/Library/Android/sdk
 
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
@@ -223,7 +223,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/
 
 Lets Open Appium and Click on Edit Configuration
 your will see a white Dialog resize it from bottom and right you will see the 2 text fields waiting you to write paths
-1. Android Home -> /Users/opensooquser/Library/Android/sdk/platform-tools
+1. Android Home -> /Users/asmaa/Library/Android/sdk/platform-tools
 2. Java Home -> /Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
 
 write them Like this Then Save and Restart Appium
@@ -261,8 +261,8 @@ if all values matches then your Configuration is Ready
 	<parameter name="runOn" value="RF8N612N65H"></parameter>
 	<parameter name="host" value="http://127.0.0.1:4726/wd/hub"></parameter>
 		<classes>
-			<class name="com.opensooq.automation.scenario.DeActivatedPost" />
-			<class name="com.opensooq.automation.scenario.AddPost" />	
+			<class name="com.asmaa.automation.scenario.DeActivatedPost" />
+			<class name="com.asmaa.automation.scenario.AddPost" />	
 		</classes>
 </test>
 '''
@@ -283,16 +283,16 @@ Now You Moved the Source Code to Root Package inside The Application
 3. Go To LauncherConfig Class and Change the Paths to be AS the same pathes in your device (src files inside jynix project take the same pathes where you located theme)
 
 for example
-private static final String APK_FILE_PREFIX = "/Users/opensooquser/Downloads/gitt/jynx/Appium/src/apks/";
-private static final String LUNCHER_PATH = "/Users/opensooquser/Downloads/gitt/jynx/Appium/src/luncherConfig.json";
+private static final String APK_FILE_PREFIX = "/Users/asmaa/Downloads/gitt/jynx/Appium/src/apks/";
+private static final String LUNCHER_PATH = "/Users/asmaa/Downloads/gitt/jynx/Appium/src/luncherConfig.json";
 This Paths will be form the Print Line to Appium File it's mean
-1. the Output of the Print Statement will be like this Users/opensooquser/Downloads/gitt/jynx/Appium
+1. the Output of the Print Statement will be like this Users/asmaa/Downloads/gitt/jynx/Appium
 2. The Value Should be Like this When you paste it
-private static final String LUNCHER_PATH = "/Users/opensooquser/Downloads/gitt/jynx/Appium/src/luncherConfig.json";
+private static final String LUNCHER_PATH = "/Users/asmaa/Downloads/gitt/jynx/Appium/src/luncherConfig.json";
 
 Also Change the Paths Inside Config Class to be like this
-private static final String CONFIG_PATH = "/Users/opensooquser/Downloads/gitt/jynx/Appium/src/config.json";
-private static final String STAGING_CONFIG_PATH = "/Users/opensooquser/Downloads/gitt/jynx/Appium/src/stagingConfig.json";
+private static final String CONFIG_PATH = "/Users/asmaa/Downloads/gitt/jynx/Appium/src/config.json";
+private static final String STAGING_CONFIG_PATH = "/Users/asmaa/Downloads/gitt/jynx/Appium/src/stagingConfig.json";
 
 Now Start The Tests and You will see all tests working on Android and this Device can be decided from pararllel.xml 
 <parameter name="runOn" value="{Here is the Device Number}"></parameter>
@@ -470,7 +470,7 @@ Check this Values and should match the values inside Terminal when you use print
 		<parameter name="runOn" value="emulator-5554"></parameter>
 		<parameter name="host" value="http://0.0.0.0:4723/wd/hub"></parameter>
 		<classes>
-       <class name="com.opensooq.automation.scenario.Notifications" />	
+       <class name="com.asmaa.automation.scenario.Notifications" />	
 		</classes>
 ```
 7. now try to run
